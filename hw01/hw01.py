@@ -1,4 +1,6 @@
-chmod +x #!/usr/bin/env python3
+# Ethan Swallow 12/8/2023
+
+#!/usr/bin/env python3
 from typing import Required
 import xdrlib
 
@@ -69,6 +71,15 @@ rl.on('line', function(line) {
       console.log('Right!');
       x++;
       if(x >= grid[y].length) {x=0;}
+      break;
+    case 'c':
+      console.log('Clear!');
+      for(var i=0; i<grid.length; i++) {
+        grid[i] = new Array(xMax);
+        for(var j=0; j<grid[i].length; j++) {
+           grid[i][j] = ' ';
+          }
+      }
       break;
     default:
       console.log('Say what? I might have heard `' + line.trim() + '`');
