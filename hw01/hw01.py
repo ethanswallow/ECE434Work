@@ -1,9 +1,6 @@
 # Ethan Swallow 12/8/2023
 
 #!/usr/bin/env python3
-from typing import Required
-import xdrlib
-
 
 # Simple command line etch-a-sketch framework.
 
@@ -28,7 +25,7 @@ for(var i=0; i<grid.length; i++) {
 grid[y][x] = '+';
 
 #  Print the grid
-function printGrid(grid) {
+def printGrid(grid) {
   process.stdout.write('   0 1 2 3 4 5 6 7\n');
   for(var i=0; i<grid.length; i++) {
     process.stdout.write(util.format("%d: ",i));
