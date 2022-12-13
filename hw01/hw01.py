@@ -3,10 +3,11 @@
 #Setup pygame
 import sys, pygame
 pygame.init()
+pygame.event.set_allowed([pygame.QUIT, pygame.KEYDOWN])
 
 #Print instructions
 print("Etch-A-Sketch")
-print("Move by entering Commands in command line")
+print("Move with arrow keys and clear with spacebar")
 
 #Prompt for row and column numbers
 rows = int(input("Enter rows: "))
@@ -14,12 +15,12 @@ columns = int(input("Enter columns: "))
 
 #Initialize width and height to be about 500
 #Should be exactly divisible by the numer of rows or columns 
-width, height = (int(500/columns)*columns, int(500/rows)*rows)
+size = width, height = int(500/columns)*columns, int(500/rows)*rows
 white = (255,255,255)
 black = (0,0,0)
 
 #Initialize the screen as a pygame surface
-screen = pygame.display.set_mode((width, height))
+screen = pygame.display.set_mode(size)
 
 #Set cursor
 cursorleft = 0
@@ -67,28 +68,32 @@ screen.fill(white)
 #Main loop
 while 1:
 	#Handle events
-	line = input("Enter Command: ")
-	#Handle quit
-	if line =='e':
-		sys.exit()
-	#Handle UP arrow
-	elif line =='u':
-		moveup()
-	#HAndle DOWN arrow
-	elif line == 'd':
-		movedown()
-	#Handle right arrow
-	elif line == 'r':
-		moveright()
-	#Handle left arrow
-	elif line == 'l':
-		moveleft()
-	#Handle SPACEBAR
-	elif line == 'c':
-		clear()
+	for event in pygame.event.get():
+		#Handle quit
+		if event.type == pygame.QUIT:
+			sys.exit()
+		#Handle button presses
+		elif event.type == pygame.KEYDOWN:
+			#Handle UP arrow
+			if event.key == pygame.K_UP:
+				moveup()
+			#HAndle DOWN arrow
+			elif event.key == pygame.K_DOWN:
+				movedown()
+			#Handle right arrow
+			elif event.key == pygame.K_RIGHT:
+				moveright()
+			#Handle left arrow
+			elif event.key == pygame.K_LEFT:
+				moveleft()
+			#Handle SPACEBAR
+			elif event.key == pygame.K_SPACE:
+				clear()
 
 	#Draw the rectangle based on where the cursor is
 	pygame.draw.rect(screen,black,(cursorleft,cursortop,width/columns,height/rows))
 
 	#Update the screen
 	pygame.display.update()
+
+
