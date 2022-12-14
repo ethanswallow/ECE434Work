@@ -1,6 +1,6 @@
-###Homework 2
+## Homework 2
 
-###Buttons and Leds
+## Buttons and Leds
 The program turns light on when the button is pressed for that led. There are four leds and each one has it's own button. The pin assignments are
 
 LEDS
@@ -16,7 +16,7 @@ Buttons
 
 Run the program by first doing "chmod +x LEDButton.py" and then running "./LEDButton.py" to run the file.
 
-###Measuring a GPIO Pin with a Oscilliscope
+## Measuring a GPIO Pin with a Oscilliscope
 
 | | sh | python | c without lseek | c with lseek | toggle1.c | toggle1.py | toggle2.c | toggle2.py |
 | Minimum Voltage (V) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
