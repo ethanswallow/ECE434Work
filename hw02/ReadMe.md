@@ -19,6 +19,7 @@ Run the program by first doing "chmod +x LEDButton.py" and then running "./LEDBu
 ## Measuring a GPIO Pin with a Oscilliscope
 
 | | sh | python | c without lseek | c with lseek | toggle1.c | toggle1.py | toggle2.c | toggle2.py |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Minimum Voltage (V) | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Maximum Voltage (V) | 3.32 | 3.32 | 3.32 | 3.32 | 3.32 | 3.32 | 3.32 | 3.32 |
 | Procesor Usage (%) | 21.0 | 3.1 | 3.1 | 2.5 | 100 | 100 | 100 | 100 |
