@@ -111,4 +111,4 @@ A modification of the game in "hw01/hw01.py". Now uses buttons to control the mo
 * Left: P9_27
 * Clear: P9_30
 
-Run the program by first running "chmod +x hw01.py". Then run "./hw01.py"
+Run the program by first running "chmod +x hw02.py". Then run "./hw02.py"
