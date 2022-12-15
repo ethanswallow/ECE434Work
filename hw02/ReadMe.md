@@ -112,3 +112,27 @@ A modification of the game in "hw01/hw01.py". Now uses buttons to control the mo
 * Clear: P9_30
 
 Run the program by first running "chmod +x hw01.py". Then run "./hw01.py"
+
+
+# hw02 grading
+
+| Points      | Description |
+| ----------- | ----------- |
+|  0/2 | Buttons and LEDs 
+|  0/8 | Etch-a-Sketch works
+|      | Measuring a gpio pin on an Oscilloscope 
+|  2/2 | Questions answered
+|  4/4 | Table complete
+|  0/2 | gpiod
+|      | Security
+|  1/1 | ssh port 
+|  1/1 | fail2ban
+|  9/20   | **Total**
++1 for firewall
+
+
+I'm surpised that c with and without seek() have the same times.
+
+I don't see your gpiod code.
+
+Demo for the rest of the points.
