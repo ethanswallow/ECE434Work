@@ -4,7 +4,7 @@
 import Adafruit_BBIO.GPIO as GPIO
 import time
 
-#Setup pygame
+#Setup imports
 import sys
 import numpy as np
 
