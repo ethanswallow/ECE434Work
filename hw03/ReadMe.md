@@ -1,6 +1,6 @@
 # Homework 3
 ## TMP101
-The TMP101s are wired up on bus 2. The alert pin for the first TMP101 is connected to P9_12. The alert pin for the second TMP101 is connected to P9_11.
+The TMP101s are wired up on bus 2. The alert pin for the first TMP101 is connected to P9_11. The alert pin for the second TMP101 is connected to P9_12.
 temp.sh will read the value of the alert pins and print out the temperature every second. temp.py will print out the temperature if the alert pin is triggered.
 To run temp.py, first run `chmod +x setup.sh` and then `./temp.py`
 
