@@ -61,7 +61,8 @@ LINKER_FLAGS := -lstdc++
 # -----------------------
 # ------ make all -------
 # -----------------------
-
+gcc -g -c app.c -o app.o
+gcc -g app.o -o app.arm
 # The "all" rule commonly specifies all executable targets to
 # be built. Note, the user has full control over what the "all"
 # rule builds. In this solution, we only have one target.
