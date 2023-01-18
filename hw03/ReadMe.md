@@ -12,3 +12,18 @@ Move left by turning the right encoder counterclockwise.
 Move right by turning the right encoder clockwise.
 Move up by turning the left encoder counterclockwise.
 Move down by turning the left enoder clockwise.
+
+# hw03 grading
+
+| Points      | Description | | |
+| ----------- | ----------- |-|-|
+|  8/8 | TMP101 
+|  2/2 |   | Documentation 
+|  5/5 | Etch-a-Sketch
+|  3/3 |   | setup.sh | *Well done*
+|  2/2 |   | Documentation
+| 17/20 | **Total**
+
+Lste: -3
+
+*My comments are in italics. --may*
