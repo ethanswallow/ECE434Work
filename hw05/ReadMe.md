@@ -16,7 +16,7 @@ P9_16 on and off. To use it, first make it using `make` then insert the module i
 Once you are done, you can remove the module from the kernel using `sudo rmmod gpio_test`.
 
 The second part of gpio_test can be found in the gpio_test2 folder. This uses two buttons, one connected to P9_15 and one connected
-to P8_18, to control two LEDs, one connected to P9_12 and one connected to P9_14. To use it, first make it using `make` then insert 
+to P9_18, to control two LEDs, one connected to P9_12 and one connected to P9_16. To use it, first make it using `make` then insert 
 the module into the kernel using `sudo insmod gpio_test.ko`. Once you are done, you can remove the module from the kernel using 
 `sudo rmmod gpio_test`.
 
