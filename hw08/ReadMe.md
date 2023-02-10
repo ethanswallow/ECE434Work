@@ -14,7 +14,7 @@ It is a jittery function. There is a lot of overshoot on the square wave when it
 Figure 1: Toggling P9_31 as fast as possible using ARM GPIO
 
 ## PWM Generator
-The PRU is able to oscillate at 66.6MHz, which is much faster than the ARM GPIO is able to.
+The PRU is able to oscillate at 66MHz, which is much faster than the ARM GPIO is able to.
 
 # hw08 grading
 
